@@ -1,0 +1,19 @@
+const URL = "http://localhost:8080/E02RestEjemplo/webapi/clientes";
+
+window.onload = init ;
+
+function init ()
+
+{
+
+    const promisePeticionHTTP = fetch (URL);
+
+    promisePeticionHTTP
+    .then((respuesta) => {
+        console.log(respuesta);
+    })
+    .catch((error) => {
+        
+    })
+
+}
